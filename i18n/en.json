@@ -15,7 +15,7 @@
   "hero.cta.cv": "Download CV ↓",
   "hero.stats.years": "Years of experience",
   "hero.stats.techs": "Technologies in the toolkit",
-  "hero.stats.arch": "Architecture before code",
+  "hero.stats.systems": "Systems in production",
 
   "about.eyebrow": "// 01 — about",
   "about.title": "Method before<br>implementation",
@@ -36,7 +36,7 @@
   "exp.ns2.i3": "ERP mobile app in Flutter",
   "exp.ns2.i4": "Anti-redundancy logging and traceability in PostgreSQL",
   "exp.ns2.i5": "Media infrastructure on Cloudflare R2 consumed via API",
-  "exp.ns1.role": "Java Developer",
+  "exp.ns1.role": "Trainee Developer",
   "exp.ns1.when": "Feb 2025 — Oct 2025 · Araraquara, Brazil",
   "exp.ns1.i1": "E-commerce integrations within the MatCon ERP ecosystem via REST APIs",
   "exp.ns1.i2": "N8N, JavaScript and SQL automations eliminating manual team processes",

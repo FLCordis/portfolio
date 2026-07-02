@@ -15,7 +15,7 @@
   "hero.cta.cv": "Baixar CV ↓",
   "hero.stats.years": "Anos de experiência",
   "hero.stats.techs": "Tecnologias no repertório",
-  "hero.stats.arch": "Arquitetura antes do código",
+  "hero.stats.systems": "Sistemas em produção",
 
   "about.eyebrow": "// 01 — sobre",
   "about.title": "Método antes<br>da implementação",
@@ -36,7 +36,7 @@
   "exp.ns2.i3": "App mobile do ERP em Flutter",
   "exp.ns2.i4": "Logs anti-redundância e rastreabilidade em PostgreSQL",
   "exp.ns2.i5": "Infra de mídia em Cloudflare R2 consumida via API",
-  "exp.ns1.role": "Desenvolvedor Java",
+  "exp.ns1.role": "Desenvolvedor Trainee",
   "exp.ns1.when": "fev/2025 — out/2025 · Araraquara, SP",
   "exp.ns1.i1": "Integrações de e-commerce no ecossistema do ERP MatCon via APIs REST",
   "exp.ns1.i2": "Automações N8N, JavaScript e SQL eliminando processos manuais das equipes",
