@@ -419,6 +419,29 @@ section { padding-block: clamp(4rem, 10vw, 8rem); position: relative; }
 }
 
 /* ============================================================
+   SYSTEMS — SISTEMAS EM PRODUÇÃO
+   ============================================================ */
+.systems { background: var(--color-surface); border-block: 1px solid var(--color-border); }
+.sysgrid { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+@media (min-width: 640px) { .sysgrid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .sysgrid { grid-template-columns: repeat(3, 1fr); } }
+
+.sys {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  padding: var(--space-6);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.sys:hover { border-color: color-mix(in srgb, var(--color-accent) 40%, transparent); transform: translateY(-3px); box-shadow: 0 8px 28px var(--color-accent-dim); }
+.sys__ico { width: 40px; height: 40px; border-radius: var(--radius-md); display: grid; place-items: center; background: var(--color-accent-dim); color: var(--color-accent); margin-bottom: var(--space-4); }
+.sys__ico svg { width: 20px; height: 20px; }
+.sys__title { font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm); margin-bottom: var(--space-2); }
+.sys__desc { font-size: var(--text-xs); color: var(--color-text-muted); }
+.sys__result { margin-top: var(--space-3); font-size: var(--text-xs); color: var(--color-accent); }
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer { border-top: 1px solid var(--color-border); padding-block: var(--space-8); }
