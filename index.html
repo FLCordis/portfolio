@@ -77,7 +77,66 @@
 <main id="top">
 
   <!-- ============================ HERO ============================ -->
-  <!-- Task 4 -->
+  <section class="hero" id="hero" aria-label="Apresentação">
+    <svg class="hero__pipeline" viewBox="0 0 1200 680" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g class="pl-paths" fill="none" stroke="var(--pl-path)" stroke-width="1.5">
+        <path id="pl-p1" d="M120 470 C 340 470, 380 340, 600 340"/>
+        <path id="pl-p2" d="M170 590 C 380 590, 420 340, 600 340"/>
+        <path id="pl-p3" d="M600 340 C 820 340, 860 430, 1080 430"/>
+        <path id="pl-p4" d="M600 340 C 820 340, 860 560, 1100 560"/>
+        <path id="pl-p5" d="M600 340 C 800 340, 840 250, 1050 250"/>
+      </g>
+      <g class="pl-nodes">
+        <g class="pl-node" data-node="erp" transform="translate(120 470)"><circle r="26"/><text y="48">ERP</text></g>
+        <g class="pl-node" data-node="ecom" transform="translate(170 590)"><circle r="26"/><text y="48">e-commerce</text></g>
+        <g class="pl-node pl-node--core" data-node="n8n" transform="translate(600 340)"><circle r="34"/><text y="58">N8N</text></g>
+        <g class="pl-node" data-node="pg" transform="translate(1080 430)"><circle r="26"/><text y="48">PostgreSQL</text></g>
+        <g class="pl-node" data-node="tg" transform="translate(1100 560)"><circle r="26"/><text y="48">Telegram</text></g>
+        <g class="pl-node" data-node="wa" transform="translate(1050 250)"><circle r="26"/><text y="48">WhatsApp</text></g>
+      </g>
+      <g class="pl-packets"></g><!-- pipeline.js injeta os pacotes aqui -->
+    </svg>
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="wrap hero__inner">
+      <span class="hero__status"><span class="dot"></span> <span data-i18n="hero.status">Buscando novos desafios · Araraquara, SP</span></span>
+
+      <h1>
+        <span class="line"><span class="word">Flávio</span></span>
+        <span class="line"><span class="word stroke">Cordis</span></span>
+      </h1>
+
+      <p class="hero__role"><span id="typed"></span><span class="cursor" aria-hidden="true">_</span></p>
+
+      <p class="hero__tagline" data-i18n="hero.tagline">Arquitetura primeiro. Código depois. <span class="accent">Complexidade nunca.</span></p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver Projetos</a>
+        <a href="assets/cv-flavio-cordis.pdf" download class="btn btn--ghost" data-i18n="hero.cta.cv">Baixar CV ↓</a>
+        <a href="https://github.com/FLCordis" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub →</a>
+      </div>
+
+      <dl class="hero__stats">
+        <div class="stat">
+          <dd class="stat__num" data-count="4"><span class="val">0</span><span class="suffix">+</span></dd>
+          <dt class="stat__label" data-i18n="hero.stats.years">Anos de experiência</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-count="20"><span class="val">0</span><span class="suffix">+</span></dd>
+          <dt class="stat__label" data-i18n="hero.stats.techs">Tecnologias no repertório</dt>
+        </div>
+        <div class="stat">
+          <dd class="stat__num" data-count="100"><span class="val">0</span><span class="suffix">%</span></dd>
+          <dt class="stat__label" data-i18n="hero.stats.arch">Arquitetura antes do código</dt>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <span class="bar"></span>
+    </div>
+  </section>
 
   <!-- ============================ ABOUT ============================ -->
   <!-- Task 6 -->
