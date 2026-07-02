@@ -1,18 +1,39 @@
-# Flávio Cordis — Portfólio
+# Portfólio — Flávio Cordis
 
-Portfólio pessoal em **arquivo único**, autocontido, sem build e sem dependências locais.
-Tudo (HTML, CSS e JS) vive em `flavio-cordis-portfolio.html`. Dependências externas são só
-CDNs: Google Fonts (Inter + JetBrains Mono), GSAP + ScrollTrigger e Simple Icons.
+Portfólio pessoal com conceito **"Sistema Vivo"**: em vez de apenas descrever o trabalho com integrações e automação, o site o demonstra — o hero é um pipeline de integração real (ERP → N8N → PostgreSQL → Telegram/WhatsApp) com dados fluindo continuamente em SVG animado. Bilíngue (PT/EN), dark/light, sem frameworks.
 
-## Stack
+## Estrutura
 
-- HTML5 semântico, CSS moderno (custom properties, `clamp()`, `@property`, `color-mix`)
-- Animações: **GSAP + ScrollTrigger** (reveals, stagger, count-up) + CSS puro (typewriter,
-  grid de fundo, borda-gradiente, cursor glow)
-- Dark mode padrão com toggle claro/escuro (em memória — sem `localStorage`)
-- Acessível: um só `<h1>`, hierarquia de headings, `alt` em imagens, foco visível,
-  respeita `prefers-reduced-motion`, touch targets ≥ 44px
+```
+├── index.html          # marcação semântica (textos PT como padrão)
+├── css/
+│   ├── tokens.css      # design tokens (cores, tipografia, temas)
+│   └── main.css        # componentes e seções
+├── js/
+│   ├── main.js         # tema, typewriter, reveals, filtros
+│   ├── pipeline.js     # animação do pipeline (GSAP MotionPath)
+│   └── i18n.js         # toggle PT/EN
+├── i18n/
+│   ├── pt.json
+│   └── en.json
+├── assets/
+│   └── cv-flavio-cordis.pdf
+└── netlify.toml        # headers de cache e segurança
+```
 
-## Estrutura da página
+## Rodando localmente
 
-`Nav · Hero · About · Skills · Projects · Automation · Contact · Footer`
+O toggle de idioma usa `fetch`, então precisa de um servidor HTTP (não `file://`):
+
+```bash
+npx -y serve -l 8787 .
+# http://localhost:8787
+```
+
+## Deploy
+
+Hospedado no Netlify com deploy contínuo: cada push na branch `main` publica automaticamente. Sem build — o diretório raiz é servido como está.
+
+## Tecnologias
+
+HTML5 · CSS3 (custom properties, oklch, color-mix) · JavaScript vanilla · GSAP 3 (ScrollTrigger + MotionPathPlugin, via CDN) · Netlify
